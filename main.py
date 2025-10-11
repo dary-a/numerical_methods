@@ -28,11 +28,9 @@ def trig_cos(x):
 def my_sqrt(x):
     ans = x
     prev_ans = 0
-    # print(abs(ans - prev_ans))
     while abs(ans - prev_ans) > epsilon_sqrt:
         prev_ans = ans
         ans = 1 / 2 * (prev_ans + x / prev_ans)
-        # print(abs(ans - prev_ans), abs(sqrt(x) - ans))
     return ans
 
 
